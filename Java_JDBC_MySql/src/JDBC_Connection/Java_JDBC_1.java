@@ -13,7 +13,7 @@
 
 package JDBC_Connection;
 
-import java.sql.*;
+import java.sql.*;  
 public class Java_JDBC_1 {
 
 	public static void main(String[] args) throws Exception {
@@ -41,11 +41,11 @@ public class Java_JDBC_1 {
 		{
 			int id1 = rs.getInt("id");   // column id value
 			
-		//	int id1 = rs.getInt(1); // Here 1 is the column1
+		//	int id1 = rs.getInt(1); // Here 1 is the column1 index
 			
 			String name1 = rs.getString("name"); // column name value
 			
-		//  String name1 = rs.getString(2); // Here 2 is the column2
+		//  String name1 = rs.getString(2); // Here 2 is the column2 index
 			
 			System.out.println(id1+", "+name1);
 		}
